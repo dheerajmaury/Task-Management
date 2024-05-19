@@ -1,0 +1,191 @@
+/* Style.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+label {
+  font-weight: 600;
+  color: #555;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Form Grid */
+.input-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.input-group-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.input-group-single {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btnAdd {
+  flex-grow: 1;
+}
+
+/* Task Filters */
+.task-filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.task-filters button {
+  padding: 0.5rem 1rem;
+}
+
+.task-filters .btn1,
+.task-filters .btn2,
+.task-filters .btn3 {
+  background-color: #6c757d;
+}
+
+.task-filters .btn1:hover,
+.task-filters .btn2:hover,
+.task-filters .btn3:hover {
+  background-color: #5a6268;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.md\\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Task Cards */
+.task-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.task-card-header h4 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.task-card-body {
+  color: #666;
+}
+
+.task-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.task-card-footer button {
+  background-color: #dc3545;
+}
+
+.task-card-footer button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input-group-row {
+    grid-template-columns: 1fr;
+  }
+}
